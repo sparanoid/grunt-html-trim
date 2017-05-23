@@ -1,5 +1,7 @@
 # grunt-html-trim
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/grunt-html-trim.svg)](https://greenkeeper.io/)
+
 [![NPM version](https://img.shields.io/npm/v/grunt-html-trim.svg?)](https://www.npmjs.com/package/grunt-html-trim)
 [![Build Status](https://travis-ci.org/sparanoid/grunt-html-trim.svg?branch=master)](https://travis-ci.org/sparanoid/grunt-html-trim)
 [![dependencies Status](https://img.shields.io/david/sparanoid/grunt-html-trim.svg)](https://david-dm.org/sparanoid/grunt-html-trim)
