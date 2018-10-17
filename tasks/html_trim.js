@@ -34,13 +34,13 @@ module.exports = function(grunt) {
       // Write the destination file.
       grunt.file.write(f.dest, src);
       created.files++;
-
-      if (created.files > 0) {
-        grunt.log.ok(created.files + ' ' + grunt.util.pluralize(created.files, 'file/files') + ' created.');
-      } else {
-        grunt.log.warn('No files created.');
-      }
     });
+
+    if (created.files > 0) {
+      grunt.log.ok(created.files + ' ' + grunt.util.pluralize(created.files, 'file/files') + ' created.');
+    } else {
+      grunt.log.warn('No files created.');
+    }
 
   });
 
