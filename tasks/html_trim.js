@@ -11,6 +11,10 @@ module.exports = function(grunt) {
   'use strict';
 
   grunt.registerMultiTask('html_trim', 'Trim HTML files', function() {
+    var created = {
+      files: 0
+    };
+
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
       // Concat specified files.
@@ -29,9 +33,13 @@ module.exports = function(grunt) {
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
+      created.files++;
 
-      // Print a success message.
-      grunt.log.writeln('File "' + f.dest + '" created.');
+      if (created.files > 0) {
+        grunt.log.ok(created.files + ' ' + grunt.util.pluralize(created.files, 'file/files') + ' created.');
+      } else {
+        grunt.log.warn('No files created.');
+      }
     });
 
   });
